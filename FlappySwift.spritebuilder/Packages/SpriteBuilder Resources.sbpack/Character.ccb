@@ -186,7 +186,7 @@
 			<key>collisionMask</key>
 			<array/>
 			<key>collisionType</key>
-			<string></string>
+			<string>hero</string>
 			<key>cornerRadius</key>
 			<real>15</real>
 			<key>density</key>
@@ -273,6 +273,17 @@
 			</dict>
 			<dict>
 				<key>name</key>
+				<string>normalMapSpriteFrame</string>
+				<key>type</key>
+				<string>SpriteFrame</string>
+				<key>value</key>
+				<array>
+					<string></string>
+					<string></string>
+				</array>
+			</dict>
+			<dict>
+				<key>name</key>
 				<string>color</string>
 				<key>type</key>
 				<string>Color3</string>
@@ -283,6 +294,14 @@
 					<real>1</real>
 					<real>1</real>
 				</array>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>effects</string>
+				<key>type</key>
+				<string>EffectControl</string>
+				<key>value</key>
+				<array/>
 			</dict>
 		</array>
 		<key>selected</key>

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5D6DF0AD19CE4C5800B211DF /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0AC19CE4C5800B211DF /* MainScene.swift */; };
-		5D6DF0AF19CE509700B211DF /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0AE19CE509700B211DF /* GameplayScene.swift */; };
 		5D6DF0B119CE5E8100B211DF /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0B019CE5E8100B211DF /* Character.swift */; };
 		5D6DF0B319CE65F900B211DF /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0B219CE65F900B211DF /* Obstacle.swift */; };
 		5D9256DE19D6A650009C1D57 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9256DD19D6A650009C1D57 /* Goal.swift */; };
@@ -59,12 +58,8 @@
 		BE58974D19DC7AC000647263 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0B019CE5E8100B211DF /* Character.swift */; };
 		BE58974E19DC7AC000647263 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0AC19CE4C5800B211DF /* MainScene.swift */; };
 		BE58974F19DC7AC000647263 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0B219CE65F900B211DF /* Obstacle.swift */; };
-		BE58975019DC7AC000647263 /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6DF0AE19CE509700B211DF /* GameplayScene.swift */; };
 		BE58975119DC7AC000647263 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9256DD19D6A650009C1D57 /* Goal.swift */; };
 		BE58975719DC7B3B00647263 /* MSCaptureGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE58975619DC7B3B00647263 /* MSCaptureGLView.m */; };
-		BE58975819DC800600647263 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE58973519DC79AA00647263 /* libcocos2d.a */; };
-		BED6F72019DE37650033D84F /* TutorialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6F71F19DE37650033D84F /* TutorialScene.swift */; };
-		BED6F72119DE37650033D84F /* TutorialScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED6F71F19DE37650033D84F /* TutorialScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,13 +69,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = D2FEB74F194F6C9E00FC0574;
 			remoteInfo = cocos2dAndroid;
-		};
-		657141101A5B142700647D41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5BF3267A195F8D8800D9A51A;
-			remoteInfo = cocos2dJava;
 		};
 		657141121A5B142700647D41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -110,33 +98,18 @@
 			remoteGlobalIDString = BE58970E19DC799B00647263;
 			remoteInfo = FlappySwiftOSX;
 		};
-		BE58973419DC79AA00647263 /* PBXContainerItemProxy */ = {
+		DFD7F9FD1B7AB54E006C1692 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = E01E663D121CA00A001A484F;
-			remoteInfo = cocos2d;
-		};
-		BE58973619DC79AA00647263 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D37EE9FC187D4E7700CB5EF2;
-			remoteInfo = ObjectiveChipmunk;
-		};
-		BE58973819DC79B800647263 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E01E663C121CA00A001A484F;
-			remoteInfo = cocos2d;
+			remoteGlobalIDString = B7E7DE341A76DB7D004234B7;
+			remoteInfo = cocos2dMacFramework;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5D6DF0A819CE4C1C00B211DF /* FlappySwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlappySwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		5D6DF0AC19CE4C5800B211DF /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainScene.swift; path = Source/MainScene.swift; sourceTree = "<group>"; };
-		5D6DF0AE19CE509700B211DF /* GameplayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameplayScene.swift; path = Source/GameplayScene.swift; sourceTree = "<group>"; };
 		5D6DF0B019CE5E8100B211DF /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Character.swift; path = Source/Character.swift; sourceTree = "<group>"; };
 		5D6DF0B219CE65F900B211DF /* Obstacle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Obstacle.swift; path = Source/Obstacle.swift; sourceTree = "<group>"; };
 		5D9256DD19D6A650009C1D57 /* Goal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Goal.swift; path = Source/Goal.swift; sourceTree = "<group>"; };
@@ -184,7 +157,6 @@
 		BE58972119DC799B00647263 /* FlappySwiftOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappySwiftOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE58972619DC799B00647263 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE58972719DC799B00647263 /* FlappySwiftOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlappySwiftOSXTests.m; sourceTree = "<group>"; };
-		BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "cocos2d-osx.xcodeproj"; path = "Source/libs/cocos2d-iphone/cocos2d-osx.xcodeproj"; sourceTree = "<group>"; };
 		BE58973A19DC7A2D00647263 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BE58973C19DC7A3400647263 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		BE58973E19DC7A3B00647263 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
@@ -196,7 +168,6 @@
 		BE58974A19DC7A6100647263 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
 		BE58975519DC7B3B00647263 /* MSCaptureGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCaptureGLView.h; sourceTree = "<group>"; };
 		BE58975619DC7B3B00647263 /* MSCaptureGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCaptureGLView.m; sourceTree = "<group>"; };
-		BED6F71F19DE37650033D84F /* TutorialScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialScene.swift; path = Source/TutorialScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,7 +193,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE58975819DC800600647263 /* libcocos2d.a in Frameworks */,
 				BE58974B19DC7A6100647263 /* libz.dylib in Frameworks */,
 				BE58974919DC7A5A00647263 /* GameKit.framework in Frameworks */,
 				BE58974719DC7A5500647263 /* OpenGL.framework in Frameworks */,
@@ -258,8 +228,6 @@
 		657141221A5B269E00647D41 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				BED6F71F19DE37650033D84F /* TutorialScene.swift */,
-				5D6DF0AE19CE509700B211DF /* GameplayScene.swift */,
 				5D6DF0AC19CE4C5800B211DF /* MainScene.swift */,
 			);
 			name = Scenes;
@@ -278,7 +246,6 @@
 		9222E2B918734FF800A246C7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */,
 				B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */,
 			);
 			name = libs;
@@ -301,8 +268,8 @@
 			children = (
 				B737894B180761A90076A88C /* libcocos2d.a */,
 				6571410F1A5B142700647D41 /* libcocos2dAndroid.a */,
-				657141111A5B142700647D41 /* cocos2dJava.jar */,
 				657141131A5B142700647D41 /* libcocos2d-mac.a */,
+				DFD7F9FE1B7AB54E006C1692 /* cocos2dMacFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -438,15 +405,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BE58973019DC79A900647263 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BE58973519DC79AA00647263 /* libcocos2d.a */,
-				BE58973719DC79AA00647263 /* libObjectiveChipmunk.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,7 +438,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				BE58973919DC79B800647263 /* PBXTargetDependency */,
 			);
 			name = FlappySwiftOSX;
 			productName = FlappySwiftOSX;
@@ -547,10 +504,6 @@
 					ProductGroup = B7378941180761A80076A88C /* Products */;
 					ProjectRef = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
 				},
-				{
-					ProductGroup = BE58973019DC79A900647263 /* Products */;
-					ProjectRef = BE58972F19DC79A900647263 /* cocos2d-osx.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -569,13 +522,6 @@
 			remoteRef = 6571410E1A5B142700647D41 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		657141111A5B142700647D41 /* cocos2dJava.jar */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.jar;
-			path = cocos2dJava.jar;
-			remoteRef = 657141101A5B142700647D41 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		657141131A5B142700647D41 /* libcocos2d-mac.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -590,18 +536,11 @@
 			remoteRef = B737894A180761A90076A88C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BE58973519DC79AA00647263 /* libcocos2d.a */ = {
+		DFD7F9FE1B7AB54E006C1692 /* cocos2dMacFramework.framework */ = {
 			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcocos2d.a;
-			remoteRef = BE58973419DC79AA00647263 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BE58973719DC79AA00647263 /* libObjectiveChipmunk.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libObjectiveChipmunk.a;
-			remoteRef = BE58973619DC79AA00647263 /* PBXContainerItemProxy */;
+			fileType = wrapper.framework;
+			path = cocos2dMacFramework.framework;
+			remoteRef = DFD7F9FD1B7AB54E006C1692 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -672,9 +611,7 @@
 			files = (
 				658DB6721A5C89A90032B610 /* AppDelegate.h in Sources */,
 				5D6DF0AD19CE4C5800B211DF /* MainScene.swift in Sources */,
-				5D6DF0AF19CE509700B211DF /* GameplayScene.swift in Sources */,
 				5D6DF0B319CE65F900B211DF /* Obstacle.swift in Sources */,
-				BED6F72119DE37650033D84F /* TutorialScene.swift in Sources */,
 				658DB66D1A5C89100032B610 /* AppDelegate.m in Sources */,
 				5D9256DE19D6A650009C1D57 /* Goal.swift in Sources */,
 				658DB6751A5C8AD20032B610 /* main.m in Sources */,
@@ -687,11 +624,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE58974D19DC7AC000647263 /* Character.swift in Sources */,
-				BED6F72019DE37650033D84F /* TutorialScene.swift in Sources */,
 				BE58974E19DC7AC000647263 /* MainScene.swift in Sources */,
 				BE58974F19DC7AC000647263 /* Obstacle.swift in Sources */,
 				BE58971719DC799B00647263 /* main.m in Sources */,
-				BE58975019DC7AC000647263 /* GameplayScene.swift in Sources */,
 				BE58971519DC799B00647263 /* AppDelegate.m in Sources */,
 				BE58975719DC7B3B00647263 /* MSCaptureGLView.m in Sources */,
 				BE58975119DC7AC000647263 /* Goal.swift in Sources */,
@@ -718,11 +653,6 @@
 			isa = PBXTargetDependency;
 			target = BE58970E19DC799B00647263 /* FlappySwiftOSX */;
 			targetProxy = BE58972219DC799B00647263 /* PBXContainerItemProxy */;
-		};
-		BE58973919DC79B800647263 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = cocos2d;
-			targetProxy = BE58973819DC79B800647263 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
