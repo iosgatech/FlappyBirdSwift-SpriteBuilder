@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 class MainScene : GamePlayScene { //explain how this is a subclass of GamePlayScene.swift
     
@@ -89,7 +89,7 @@ class MainScene : GamePlayScene { //explain how this is a subclass of GamePlaySc
             // just in case
             hero?.stopAllActions()
             
-            var move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.2, position: ccp(0, 4)))
+            var move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.1, position: ccp(0, 4)))
             var moveBack = CCActionEaseBounceOut(action: move.reverse())
             var shakeSequence = CCActionSequence(array: [move, moveBack])
             runAction(shakeSequence)
