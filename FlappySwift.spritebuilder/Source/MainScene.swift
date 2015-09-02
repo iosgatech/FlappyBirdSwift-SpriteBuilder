@@ -1,10 +1,18 @@
+//
+//  GamePlayScene.swift
+//  FlappySwift
+//
+//  Created by Brian Wang on 8/21/15.
+//  Copyright (c) 2015 Apportable. All rights reserved.
+//
+
 import UIKit
 
-class MainScene : GamePlayScene { //explain how this is a subclass of GamePlayScene.swift
+class MainScene : GamePlayScene { //This is a subclass of GamePlayScene
     
-    var points: Int = 0
     let firstObstaclePosition: CGFloat = 200
     let distanceBetweenObstacles: CGFloat = 160
+    var points: Int = 0
     
     weak var _obstaclesLayer: CCNode!
     weak var _restartButton: CCButton!
@@ -12,8 +20,8 @@ class MainScene : GamePlayScene { //explain how this is a subclass of GamePlaySc
     
     
     override func didLoadFromCCB() {
-        super.didLoadFromCCB() //explain how to super a method
-        userInteractionEnabled = true //just explain what this does
+        super.didLoadFromCCB()
+        userInteractionEnabled = true //this makes it so that user's can actually interact with the screen.
         _gamePhysicsNode.collisionDelegate = self
         
         hero = CCBReader.load("Character") as? Character
@@ -45,10 +53,12 @@ class MainScene : GamePlayScene { //explain how this is a subclass of GamePlaySc
     }
     
     override func touchBegan(touch: CCTouch!, withEvent event: CCTouchEvent!) {
-        if (isGameOver == false) {
+        if (!isGameOver) {
             // move up and rotate
             hero?.flap()
-            sinceTouch = 0
+            
+            //resets the time so that the bird doesn't rotate immediately after jumping
+            sinceTouch = 0;
         }
     }
     
@@ -62,33 +72,34 @@ class MainScene : GamePlayScene { //explain how this is a subclass of GamePlaySc
         let obstacle = CCBReader.load("Obstacle") as! Obstacle
         obstacle.position = ccp(prevObstaclePos + distanceBetweenObstacles, 0)
         obstacle.setupRandomPosition()
-        _obstaclesLayer.addChild(obstacle)
         obstacles.append(obstacle)
+        
+        //add child to scene
+        _obstaclesLayer.addChild(obstacle)
     }
     
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!,hero: CCNode!,goal: CCNode!) -> Bool {
-        goal.removeFromParent()
-        points++
-        _scoreLabel.string = String(points)
-        return true
-    }
-    
-    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!,hero: CCNode!,level: CCNode!) -> Bool {
-        gameOver()
-        return true
+    func restart() {
+        var scene = CCBReader.loadAsScene("MainScene")
+        CCDirector.sharedDirector().replaceScene(scene)
     }
     
     func gameOver() {
         if (isGameOver == false) {
+            //prevents update() in gamePlayScene from being called
             isGameOver = true
+            
+            //make the button show up
             _restartButton.visible = true
+            
+            //stop scrolling
             scrollSpeed = 0
+            
+            //stop all hero action
             hero?.rotation = 90
             hero?.physicsBody.allowsRotation = false
-            
-            // just in case
             hero?.stopAllActions()
             
+            //shake the screen
             var move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.1, position: ccp(0, 4)))
             var moveBack = CCActionEaseBounceOut(action: move.reverse())
             var shakeSequence = CCActionSequence(array: [move, moveBack])
@@ -96,9 +107,16 @@ class MainScene : GamePlayScene { //explain how this is a subclass of GamePlaySc
         }
     }
     
-    func restart() {
-        var scene = CCBReader.loadAsScene("MainScene")
-        CCDirector.sharedDirector().replaceScene(scene)
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!,hero: CCNode!,level: CCNode!) -> Bool {
+        gameOver()
+        return true
+    }
+    
+    func ccPhysicsCollisionBegin(pair: CCPhysicsCollisionPair!,hero: CCNode!,goal: CCNode!) -> Bool {
+        goal.removeFromParent()
+        points++
+        _scoreLabel.string = String(points)
+        return true
     }
     
 }
