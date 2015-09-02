@@ -2,6 +2,11 @@
 Learn how to build a Flappy Bird clone in Swift with SpriteBuilder and Cocos2d 3.0!
 ![image](GamePreview.gif)
 
+
+#### 9/2/15 spritebuilder refactor and tutorial v1.0
+- Ported to new SpriteBuilder architecture
+- Restructured code to follow tutorial steps
+
 #### 8/11/15 iosgatech revamp
 - modified from [MakeSchool's](https://github.com/MakeSchool) excellent Flappy Bird tutorial
 - revamped and updated utilizing code from [HoppyBunny](https://github.com/MakeSchool/HoppyBunny-SpriteBuilder-Swift)
