@@ -28,7 +28,7 @@ class MainScene : GamePlayScene { //This is a subclass of GamePlayScene
         _gamePhysicsNode.addChild(hero)
         
         // spawn the first obstacles
-        for i in 1...3 {
+        for _ in 1...3 {
             spawnNewObstacle() //have them look this up on how to do a for loop
         }
     }
@@ -44,7 +44,7 @@ class MainScene : GamePlayScene { //This is a subclass of GamePlayScene
             // obstacle moved past left side of screen?
             if obstacleScreenPosition.x < (-obstacle.contentSize.width) {
                 obstacle.removeFromParent()
-                obstacles.removeAtIndex(find(obstacles, obstacle)!)
+                obstacles.removeAtIndex(obstacles.indexOf(obstacle)!)
                 
                 // for each removed obstacle, add a new one
                 spawnNewObstacle()
@@ -79,7 +79,7 @@ class MainScene : GamePlayScene { //This is a subclass of GamePlayScene
     }
     
     func restart() {
-        var scene = CCBReader.loadAsScene("MainScene")
+        let scene = CCBReader.loadAsScene("MainScene")
         CCDirector.sharedDirector().replaceScene(scene)
     }
     
@@ -100,9 +100,9 @@ class MainScene : GamePlayScene { //This is a subclass of GamePlayScene
             hero?.stopAllActions()
             
             //shake the screen
-            var move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.1, position: ccp(0, 4)))
-            var moveBack = CCActionEaseBounceOut(action: move.reverse())
-            var shakeSequence = CCActionSequence(array: [move, moveBack])
+            let move = CCActionEaseBounceOut(action: CCActionMoveBy(duration: 0.1, position: ccp(0, 4)))
+            let moveBack = CCActionEaseBounceOut(action: move.reverse())
+            let shakeSequence = CCActionSequence(array: [move, moveBack])
             runAction(shakeSequence)
         }
     }
